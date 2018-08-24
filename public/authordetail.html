@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ETD</title>
+    <!-- update the version number as needed -->
+    <script  src="/__/firebase/5.4.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script  src="/__/firebase/5.4.0/firebase-auth.js"></script>
+    <script  src="/__/firebase/5.4.0/firebase-database.js"></script>
+    <script  src="/__/firebase/5.4.0/firebase-messaging.js"></script>
+    <script  src="/__/firebase/5.4.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script  src="/__/firebase/init.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+ </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">ETD CU(MDY)</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only" style="background-color: rgb(63,81,181);">
+          <a href="index.html" class="is-active mdl-navigation__link"><i class="small material-icons">home</i></a>
+          <a href="author.html" class="mdl-navigation__link"><i class="small material-icons">person</i></a>
+          <a href="bachelor.html" class="mdl-navigation__link"><i class="small material-icons">school</i></a>
+          <a href="year.html" class="mdl-navigation__link"><i class="small material-icons">today</i></a>
+          <a href="publisher.html" class="mdl-navigation__link"><i class="small material-icons">bookmarks</i></a>
+          <a href="login.html" class="mdl-navigation__link"><i class="small material-icons">lock_open</i></a>
+          </nav> 
+        </div>
+      </header>
+
+        <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">ETD CU(MDY)</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html"><i class="small material-icons" style="padding-right: 20px">home</i>Home</a>
+          <a class="mdl-navigation__link" href="author.html"><i class="small material-icons" style="padding-right: 20px">person</i>Authors</a>
+          <a class="mdl-navigation__link" href="bachelor.html"><i class="small material-icons" style="padding-right: 20px">school</i>Bachelor</a>
+          <a class="mdl-navigation__link" href="year.html"><i class="small material-icons" style="padding-right: 20px">today</i>Years</a>
+          <a class="mdl-navigation__link" href="publisher.html"><i class="small material-icons" style="padding-right: 20px">bookmarks</i>Publisher</a>
+          <a class="mdl-navigation__link" href="login.html"><i class="small material-icons" style="padding-right: 20px">lock_open</i>Login</a>
+        </nav>
+        </div>
+        <main class="mdl-layout__content">
+
+      <div class="mdl-card__supporting-text">
+          <h3 style="color: green;font-style:oblique;">Thesis Information</h3>
+      </div>
+      <label for="internNameRead" style="color: green;font-style:oblique;">Enter Author Name</label>
+      <input type="text" name="internNameRead" id="internNameRead"></input>
+      <button id="internGetInfo" style="color: green;font-style:oblique;">Get Info</button>
+      <hr>
+     <table class="fixed_headers" border="solid">
+            <thead>
+             <tr>
+                 <th width="15%" style="color: red;font-style:oblique;">Student Name</th>
+                 <th width="10%" style="color: red;font-style:oblique;">Degree</th>
+                 <th width="15%" style="color: red;font-style:oblique;">Supervisor Name</th>
+                 <th width="10%" style="color: red;font-style:oblique;">Year</th>
+                 <th width="20%" style="color: red;font-style:oblique;">Thesis Title</th>
+                 <th width="30%" style="color: red;font-style:oblique;">Abstract</th>
+              </tr>
+            </thead>
+            <tbody id="internsNameResult">
+            </tbody>
+    </table>
+    <script src="js/app.js"></script>
+  </main>
+
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXX-X', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- Built with love using Web Starter Kit -->
+    
+  </div>
+    
+ </body>
+</html>
