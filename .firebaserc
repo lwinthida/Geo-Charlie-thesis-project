@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "thesis-and-dissertation",
+    "s": "geo-charlie-etd-project",
+    "staging": "geo-charlie-etd-project"
+  }
+}
